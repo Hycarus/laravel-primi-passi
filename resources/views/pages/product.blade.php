@@ -19,8 +19,11 @@
 
 <body>
 
-    <main>
+    <main class="container">
         <h1>Product</h1>
+        <button class="btn">
+            <a href="{{route('home')}}">Return to Home</a>
+        </button>
     </main>
 
 

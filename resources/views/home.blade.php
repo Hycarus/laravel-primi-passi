@@ -18,9 +18,44 @@
 </head>
 
 <body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('product')}}">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('about')}}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <main>
-        <h1>Hello world!</h1>
+    <main class="container">
+        <h1>Hello World!</h1>
+        <ul>
+            <li>Nome: {{$name}}</li>
+            <li>Cognome: {{$surname}}</li>
+            <li>Age: {{$age}}</li>
+            <li>Country: {{$country}}</li>
+            <li>Address: {{$address}}</li>
+            <li>Email: {{$email}}</li>
+            <li>Gender: {{$gender}}</li>
+        </ul>
     </main>
 
 

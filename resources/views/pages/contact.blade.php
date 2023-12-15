@@ -21,6 +21,9 @@
 
     <main>
         <h1>Contact</h1>
+        <button class="btn">
+            <a href="{{route('home')}}">Return to Home</a>
+        </button>
     </main>
 
 
